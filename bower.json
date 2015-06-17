@@ -1,0 +1,23 @@
+{
+  "name": "chattify",
+  "version": "0.0.1",
+  "authors": [
+    "Mark Angelo Libantino <mark.libantino@cloudsherpas.com>"
+  ],
+  "description": "Angular Browser Chat Application",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.0",
+    "firebase": "~2.2.7",
+    "angular-route": "~1.4.0",
+    "angular-sanitize": "~1.4.0"
+  }
+}

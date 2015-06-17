@@ -1,0 +1,31 @@
+<div>
+<form name="loginForm" class="form-vertical span3" novalidate>
+  <fieldset>
+  <h2>Login</h2>
+	<div class="control-group">
+		<label class="control-label" for="user">User</label>
+		<div class="controls">
+			<input type="text" ng-model="user" id="user" name="user" placeholder="Enter user name" required/>
+			<span style="color:red" ng-show="loginForm.user.$dirty && loginForm.user.$invalid">
+			<span ng-show="loginForm.user.$error.required">Username is required.</span>
+			<span ng-show="loginForm.user.$error.user">Invalid user name.</span>
+			</span>
+ 		</div>
+
+		<label class="control-label" for="room">Room</label>
+		<div class="controls">
+			<input type="text" ng-model="room" id="room" name="room" placeholder="Enter room id" required/>
+			<span style="color:red" ng-show="loginForm.room.$dirty && loginForm.room.$invalid">
+			<span ng-show="loginForm.room.$error.required">Room is required.</span>
+			<span ng-show="loginForm.room.$error.room">Invalid room id.</span>
+			</span>
+ 		</div>
+	</div>
+	<div class="form-actions">
+  		<input type="button" class="btn btn-primary" value="Login" ng-click="doLogin()"
+  			ng-disabled="loginForm.user.$dirty && loginForm.user.$invalid ||
+  			loginForm.room.$dirty && loginForm.room.$invalid">
+  	</div>
+  </fieldset>
+</form>
+</div>

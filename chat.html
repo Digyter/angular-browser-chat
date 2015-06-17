@@ -1,0 +1,42 @@
+<div>
+<!-- <h2>Chattify</h2>
+<table>
+	<tr>
+		<td>
+	<ul>
+	<li class="divider" ng-repeat="message in messages" ng-if="message.room == room">
+	{{ message.user }}  : {{ message.text }}
+
+	</li>
+	</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>{{name}}</td><td></td><td>{{room}}</td>
+	</tr>
+	<tr>
+		<td><p><input type="text" ng-model="newmessage.text"><button ng-click="send(newmessage)">Send</button></p></td>
+	</tr>
+</table>      
+ -->
+	<form name="loginForm" class="form-vertical span3" novalidate>
+	<fieldset>
+		<h2>Chattify</h2>
+		<div class="control-group">
+			<ul>
+			<li class="divider" ng-repeat="message in messages" ng-if="message.room == room">
+			{{ message.user }}  : {{ message.text }}
+			</li>
+			</ul>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+			<input type="text" ng-model="newmessage.text" placeholder="Enter message here" required/>
+			</div>
+		</div>
+		<div class="form-actions">
+			<input type="button" class="btn btn-primary" value="Send" ng-click="send(newmessage)"/>
+		</div>
+		</fieldset>
+	</form>
+</div>
